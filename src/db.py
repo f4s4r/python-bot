@@ -1,6 +1,6 @@
 import sqlite3
 
-connection = sqlite3.connect('book_recommendations_for_beg.db')
+connection = sqlite3.connect('./data/book_recommendations_for_beg.db')
 
 
 def init_db_books():
