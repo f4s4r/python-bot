@@ -16,7 +16,7 @@ load_dotenv() # загружаем перменнные окружения из 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 
-with open("src/texts.json", "r") as my_file:
+with open("./src/texts.json", "r") as my_file:
     texts_json = my_file.read()
 
 texts = json.loads(texts_json)

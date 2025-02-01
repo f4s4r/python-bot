@@ -1,0 +1,12 @@
+services:
+  telegram-bot:
+    container_name: arabic-telegram-bot
+    build: .
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - db-data:/app/data
+
+volumes:
+  db-data:
