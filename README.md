@@ -8,6 +8,6 @@ This is bot for suggestions arabic books for beginners
 git clone https://github.com/f4s4r/python-bot.git
 cd python-bot
 echo "BOT_TOKEN=your_telegram_bot_token" > .env
-docker build -t python-telegram-bot .
-docker run --env-file .env python-telegram-bot
+docker-compose build
+docker-compose run
 
